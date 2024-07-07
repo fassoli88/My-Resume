@@ -79,7 +79,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            
+            <div className="cut border-b-2 border-black" />
       </div>
     </div>
   );
