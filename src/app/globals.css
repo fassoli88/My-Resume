@@ -2,32 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+  background-color: #F1E9DA;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.takesall > *{
+  color: #4D4D4D;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+#dheader{
+  position: relative;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.title{
+  font-family: "Anton", sans-serif;
+  font-size: 242px;
+  text-align: center;
+}
+.cut{
+  border-style: dashed;
+}
+.mypicture{
+  transform: rotate(-2deg);
+  
+}
+.wanted{
+  font-family: "Anton", sans-serif;
+  border: 3px solid #4D4D4D;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 23px;
+  position: relative;
+  top: 45px;
+  left: 352px;
+  transform: rotate(15deg);
+  z-index: 1;
+}
+.picname{
+  background-color: #4D4D4D;
+  height: 150px;
+  width: 550px;
+  text-align: center;
+  margin: auto;
+  transform: rotate(2deg);
+}
+#name{
+  font-family: "Anton", sans-serif;
+  color: #F1E9DA;
+  font-size: 55px;
+  padding-top: 20px;
+}
+#career{
+  color: #F1E9DA;
+  font-family: sans-serif;
+}
+.lr{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+#about, #subtitle{
+  font-size: 30px;
+}
+#summary{ 
+  font-size: 20px;
+}
+.job{
+  font-size: 25px;
+}
+#date1{
+  padding-top: 7.5rem;
+  padding-left: 1.5rem;
+  font-weight: bold;
+}
+#date2{
+  padding-top: 13rem;
+  padding-left: 1.5rem;
+  font-weight: bold;
+}
+.list{
+  font-size: 20px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.skill{
+   padding-top: 40px;
+   padding-bottom: 30px;
+}
+.skill-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
 }
